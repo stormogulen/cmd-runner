@@ -1,0 +1,36 @@
+commands:
+  - name: hello
+    category: Custom
+    type: func
+    code: "Hello from YAML!"
+
+  - name: check
+    category: Custom
+    type: func
+    code: "System check passed."
+
+  - name: date
+    category: System
+    type: exec
+    command: date
+
+  - name: list
+    category: System
+    type: exec
+    command: ls
+    args: ["-l"]
+
+  - name: Git Status
+    type: exec
+    command: git
+    args: ["status"]
+
+  - name: Git Log (oneline)
+    type: exec
+    command: git
+    args: ["log", "--oneline", "-n", "10"]
+
+  - name: Git Diff
+    type: exec
+    command: git
+    args: ["diff"]
